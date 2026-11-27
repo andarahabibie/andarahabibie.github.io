@@ -1,29 +1,27 @@
-# Andara Ahmad Habibie — Professional Profile
+# Andara Ahmad Habibie: Portfolio
 
-Personal portfolio website built for GitHub Pages.
+Personal portfolio for GitHub Pages. English and Bahasa Indonesia, single page, no build step.
 
 **Live:** https://andarahabibie.github.io
 
-## Stack
-- Vanilla HTML / CSS / JavaScript
-- No build step, no dependencies
-- Bilingual: English / Bahasa Indonesia
-
-## Deploy to GitHub Pages
-
-1. Fork or clone this repo
-2. Go to **Settings → Pages**
-3. Set source to `main` branch, `/ (root)`
-4. Your site will be live at `https://<username>.github.io`
-
-## Structure
-
+## Files
 ```
-index.html   — main single-page site
-style.css    — all styles
-main.js      — language toggle, nav, smooth scroll
-README.md    — this file
+index.html   content (every text has data-en and data-id for the language toggle)
+style.css    design tokens, layout, light and dark themes
+main.js      language toggle, mobile menu, active nav link, smooth scroll,
+             redaction demo, copy email
 ```
+
+## What works
+- EN / ID toggle (remembers the choice)
+- Mobile menu (closes on link tap and Escape)
+- Nav highlights the section in view
+- Redaction demo in the hero (works in both languages)
+- Copy email button (falls back to selecting the text)
+- Light and dark theme follow the system setting
+
+## Deploy
+Settings, Pages, source `main` branch, `/ (root)`.
 
 ## Contact
 aabahmadhabibie@gmail.com
