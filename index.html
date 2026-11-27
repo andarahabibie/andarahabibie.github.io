@@ -3,442 +3,371 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andara Ahmad Habibie — AI & Web Developer</title>
-  <meta name="description" content="Informatics Engineering student specializing in AI and NLP. Full-stack web developer. Budi Luhur University." />
+  <title>Andara Ahmad Habibie | AI Programmer and Web Developer</title>
+  <meta name="description" content="Andara Ahmad Habibie builds NLP and data systems for Indonesian institutions. AI-Redact, LPP TVRI meeting-minutes summarizer, HKI-registered journal monitoring system." />
+  <meta name="color-scheme" content="light dark" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip" href="#main" data-en="Skip to content" data-id="Langsung ke konten">Skip to content</a>
 
   <!-- NAV -->
   <header id="nav">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">AAH</a>
-      <nav class="nav-links">
-        <a href="#about"      data-en="About"      data-id="Tentang">About</a>
-        <a href="#skills"     data-en="Skills"     data-id="Keahlian">Skills</a>
-        <a href="#experience" data-en="Experience" data-id="Pengalaman">Experience</a>
+      <a href="#hero" class="nav-logo">Andara Habibie</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#now"        data-en="Now"        data-id="Saat Ini">Now</a>
         <a href="#projects"   data-en="Projects"   data-id="Proyek">Projects</a>
-        <a href="#blog"       data-en="Blog"       data-id="Tulisan">Blog</a>
+        <a href="#experience" data-en="Experience" data-id="Pengalaman">Experience</a>
+        <a href="#skills"     data-en="Skills"     data-id="Keahlian">Skills</a>
         <a href="#contact"    data-en="Contact"    data-id="Kontak">Contact</a>
       </nav>
       <div class="nav-right">
-        <button id="lang-toggle" aria-label="Toggle language">EN / ID</button>
-        <button id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <button id="lang-toggle" type="button" aria-label="Switch language">EN / ID</button>
+        <button id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
     <div id="mobile-menu">
-      <a href="#about"      data-en="About"      data-id="Tentang">About</a>
-      <a href="#skills"     data-en="Skills"     data-id="Keahlian">Skills</a>
-      <a href="#experience" data-en="Experience" data-id="Pengalaman">Experience</a>
+      <a href="#now"        data-en="Now"        data-id="Saat Ini">Now</a>
       <a href="#projects"   data-en="Projects"   data-id="Proyek">Projects</a>
-      <a href="#blog"       data-en="Blog"       data-id="Tulisan">Blog</a>
+      <a href="#experience" data-en="Experience" data-id="Pengalaman">Experience</a>
+      <a href="#skills"     data-en="Skills"     data-id="Keahlian">Skills</a>
       <a href="#contact"    data-en="Contact"    data-id="Kontak">Contact</a>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
     <!-- HERO -->
-    <section id="hero">
-      <div class="container">
-        <p class="hero-eyebrow">
-          <span data-en="Informatics Engineering · AI Specialization · Budi Luhur University" data-id="Teknik Informatika · Spesialisasi AI · Universitas Budi Luhur">Informatics Engineering · AI Specialization · Budi Luhur University</span>
-        </p>
-        <h1>Andara Ahmad Habibie</h1>
-        <p class="hero-sub"
-           data-en="I build systems that connect institutional needs with applied AI and full-stack development — from a government-registered software product to an active NLP research pipeline."
-           data-id="Saya membangun sistem yang menghubungkan kebutuhan institusi dengan AI terapan dan pengembangan full-stack — dari produk perangkat lunak terdaftar pemerintah hingga pipeline riset NLP aktif.">
-          I build systems that connect institutional needs with applied AI and full-stack development — from a government-registered software product to an active NLP research pipeline.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn-primary" data-en="See My Work" data-id="Lihat Proyek">See My Work</a>
-          <a href="#contact"  class="btn-ghost"   data-en="Get in Touch" data-id="Hubungi Saya">Get in Touch</a>
-        </div>
-        <div class="hero-meta">
-          <span>HKI Reg. No. 001131671</span>
-          <span>·</span>
-          <span data-en="Final Year, 2026" data-id="Tingkat Akhir, 2026">Final Year, 2026</span>
-          <span>·</span>
-          <span>Tangerang, Indonesia</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container two-col">
-        <div class="about-label-col">
-          <span class="section-tag" data-en="About" data-id="Tentang">About</span>
-        </div>
-        <div class="about-content-col">
-          <h2 data-en="Who I Am" data-id="Siapa Saya">Who I Am</h2>
-          <p data-en="I am a final-year Informatics Engineering student in the Excellence Class (AI Specialization) at Budi Luhur University. My work sits at the intersection of applied NLP research and production-grade web development."
-             data-id="Saya adalah mahasiswa Teknik Informatika tingkat akhir di Kelas Unggulan (Spesialisasi AI) Universitas Budi Luhur. Pekerjaan saya berada di persimpangan riset NLP terapan dan pengembangan web skala produksi.">
-            I am a final-year Informatics Engineering student in the Excellence Class (AI Specialization) at Budi Luhur University. My work sits at the intersection of applied NLP research and production-grade web development.
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Andara Ahmad Habibie</h1>
+          <p class="hero-role" data-en="AI programmer and web developer" data-id="Programmer AI dan web developer">AI programmer and web developer</p>
+          <p class="hero-sub"
+             data-en="I build NLP and data systems for Indonesian institutions. Right now I write AI software at the Constitutional Court ICT Center. Before that, I built a meeting-minutes summarizer for LPP TVRI and a journal monitoring system for my university."
+             data-id="Saya membangun sistem NLP dan data untuk institusi di Indonesia. Saat ini saya menulis perangkat lunak AI di Pusat TIK Mahkamah Konstitusi. Sebelumnya, saya membuat peringkas notulensi rapat untuk LPP TVRI dan sistem monitoring jurnal untuk universitas saya.">
+            I build NLP and data systems for Indonesian institutions. Right now I make AI software at the Constitutional Court ICT Center. Before that, I built a meeting-minutes summarizer for LPP TVRI and a journal monitoring system for my university.
           </p>
-          <p data-en="At DRPM, I built and deployed a journal monitoring system that is now formally registered as a software copyright (HKI) with Indonesia's Ministry of Law. For my thesis, I designed an extractive summarization pipeline for Indonesian national television (LPP TVRI) using BM25, LSA/SVD, TextRank, and MMR."
-             data-id="Di DRPM, saya membangun dan men-deploy sistem monitoring jurnal yang kini terdaftar sebagai hak cipta perangkat lunak (HKI) di Kementerian Hukum RI. Untuk skripsi, saya merancang pipeline peringkasan ekstraktif untuk televisi nasional Indonesia (LPP TVRI) menggunakan BM25, LSA/SVD, TextRank, dan MMR.">
-            At DRPM, I built and deployed a journal monitoring system that is now formally registered as a software copyright (HKI) with Indonesia's Ministry of Law. For my thesis, I designed an extractive summarization pipeline for Indonesian national television (LPP TVRI) using BM25, LSA/SVD, TextRank, and MMR.
-          </p>
-          <div class="about-facts">
-            <div class="fact">
-              <strong>1</strong>
-              <span data-en="HKI-registered software" data-id="Perangkat lunak HKI">HKI-registered software</span>
-            </div>
-            <div class="fact">
-              <strong>3+</strong>
-              <span data-en="Production systems shipped" data-id="Sistem produksi yang diluncurkan">Production systems shipped</span>
-            </div>
-            <div class="fact">
-              <strong>2</strong>
-              <span data-en="International certifications" data-id="Sertifikasi internasional">International certifications</span>
-            </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary" data-en="See my work" data-id="Lihat proyek">See my work</a>
+            <a href="#contact"  class="btn-ghost"   data-en="Contact me" data-id="Hubungi saya">Contact me</a>
           </div>
+          <dl class="hero-facts">
+            <div>
+              <dt data-en="Degree" data-id="Pendidikan">Degree</dt>
+              <dd data-en="Computer Science, Budi Luhur University. GPA 3.69, cum laude." data-id="Computer Science, Universitas Budi Luhur. IPK 3,69, cum laude.">Computer Science, Budi Luhur University. GPA 3.69, cum laude.</dd>
+            </div>
+            <div>
+              <dt data-en="Copyright" data-id="Hak cipta">Copyright</dt>
+              <dd data-en="HKI registration No. 001131671" data-id="Pendaftaran HKI No. 001131671">HKI registration No. 001131671</dd>
+            </div>
+            <div>
+              <dt data-en="Based in" data-id="Domisili">Based in</dt>
+              <dd>Tangerang, Indonesia</dd>
+            </div>
+          </dl>
         </div>
+
+        <figure class="demo" aria-labelledby="demo-title">
+          <div class="demo-head">
+            <span class="demo-note" data-en="Example text, fictional data" data-id="Teks contoh, data fiktif">Example text, fictional data</span>
+            <button id="redact-btn" type="button" aria-pressed="false">Redact</button>
+          </div>
+          <div class="demo-doc">
+            <p class="demo-title" id="demo-title"></p>
+            <p class="demo-body" id="demo-body"></p>
+          </div>
+          <figcaption class="demo-foot" id="demo-msg" role="status"></figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="alt-bg">
+    <!-- NOW: AI-REDACT -->
+    <section id="now" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-en="Skills" data-id="Keahlian">Skills</span>
-          <h2 data-en="Technical Capabilities" data-id="Kemampuan Teknis">Technical Capabilities</h2>
+          <h2>AI-Redact</h2>
+          <p class="status-pill" data-en="In development at the Constitutional Court ICT Center" data-id="Sedang dikembangkan di Pusat TIK Mahkamah Konstitusi">In development at the Constitutional Court ICT Center</p>
         </div>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3 data-en="AI & NLP" data-id="AI & NLP">AI & NLP</h3>
-            <ul>
-              <li>TF-IDF / BM25</li>
-              <li>Naive Bayes Classifier</li>
-              <li>LSA / SVD (Scikit-Learn)</li>
-              <li>TextRank</li>
-              <li>MMR (Maximal Marginal Relevance)</li>
-              <li>IndoBERT</li>
-              <li>K-Means Clustering</li>
-              <li>ROUGE Evaluation</li>
+        <div class="now-grid">
+          <div class="now-copy">
+            <p class="lead"
+               data-en="A web service that finds personal data in legal documents and removes it from the file. Editors review every finding before the system redacts."
+               data-id="Layanan web yang menemukan data pribadi di dokumen hukum dan menghapusnya dari berkas. Editor memeriksa setiap temuan sebelum sistem melakukan redaksi.">
+              A web service that finds personal data in legal documents and removes it from the file. Editors review every finding before the system redacts.
+            </p>
+            <ul class="facts">
+              <li data-en="Detects 18 types of personal data: names, NIK, phone numbers, addresses, bank accounts, NPWP, BPJS, API keys, and more."
+                  data-id="Mendeteksi 18 jenis data pribadi: nama, NIK, nomor telepon, alamat, rekening bank, NPWP, BPJS, API key, dan lainnya.">Detects 18 types of personal data: names, NIK, phone numbers, addresses, bank accounts, NPWP, BPJS, API keys, and more.</li>
+              <li data-en="Reads PDF, TXT, PNG, JPG, DOCX, and XLSX files. Scanned pages go through OCR."
+                  data-id="Membaca berkas PDF, TXT, PNG, JPG, DOCX, dan XLSX. Halaman hasil pindai diproses dengan OCR.">Reads PDF, TXT, PNG, JPG, DOCX, and XLSX files. Scanned pages go through OCR.</li>
+              <li data-en="Combines Hyperscan regex rules with an IndoBERT NER model (INT8, ONNX). An Indonesian legal term dictionary cuts false name matches."
+                  data-id="Menggabungkan aturan regex Hyperscan dengan model NER IndoBERT (INT8, ONNX). Kamus istilah hukum Indonesia mengurangi salah deteksi nama.">Combines Hyperscan regex rules with an IndoBERT NER model (INT8, ONNX). An Indonesian legal term dictionary cuts false name matches.</li>
+              <li data-en="Protects files with Google sign-in (OAuth2 + PKCE), per-user ownership checks, CSRF checks, and automatic deletion one hour after upload."
+                  data-id="Melindungi berkas dengan login Google (OAuth2 + PKCE), pemeriksaan kepemilikan per pengguna, pemeriksaan CSRF, dan penghapusan otomatis satu jam setelah unggah.">Protects files with Google sign-in (OAuth2 + PKCE), per-user ownership checks, CSRF checks, and automatic deletion one hour after upload.</li>
             </ul>
+            <div class="proj-tags"><span>Python</span><span>FastAPI</span><span>Celery</span><span>Redis</span><span>ONNX Runtime</span><span>Docker Compose</span><span>Nginx</span></div>
+            <p class="proj-links"><a href="https://github.com/andarahabibie/AI-Redact" target="_blank" rel="noopener" data-en="Source on GitHub" data-id="Kode di GitHub">Source on GitHub</a></p>
           </div>
-          <div class="skill-group">
-            <h3 data-en="Web Development" data-id="Pengembangan Web">Web Development</h3>
-            <ul>
-              <li>Laravel (PHP)</li>
-              <li>CodeIgniter</li>
-              <li>RESTful API Design</li>
-              <li>Streamlit</li>
-              <li>HTML / CSS</li>
-              <li>Bootstrap / Tailwind</li>
-              <li>WordPress</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3 data-en="Data Science" data-id="Data Science">Data Science</h3>
-            <ul>
-              <li>Python / Pandas</li>
-              <li>yfinance (Financial APIs)</li>
-              <li>BeautifulSoup (Web Scraping)</li>
-              <li>Plotly (Data Visualization)</li>
-              <li>MySQL / PostgreSQL</li>
-              <li>Relational Database Design</li>
-              <li>Git / Google Colab</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3 data-en="Languages" data-id="Bahasa">Languages</h3>
-            <ul>
-              <li data-en="Indonesian — Native" data-id="Indonesia — Penutur Asli">Indonesian — Native</li>
-              <li data-en="English — Fluent" data-id="Inggris — Fasih">English — Fluent</li>
-              <li data-en="Arabic — Intermediate" data-id="Arab — Menengah">Arabic — Intermediate</li>
-            </ul>
-          </div>
+
+          <ol class="pipeline" aria-label="Pipeline">
+            <li><h3 data-en="Extract" data-id="Ekstraksi">Extract</h3><p data-en="Reads text and page layout. Runs OCR on scanned pages." data-id="Membaca teks dan tata letak halaman. Menjalankan OCR pada halaman hasil pindai.">Reads text and page layout. Runs OCR on scanned pages.</p></li>
+            <li><h3 data-en="Detect" data-id="Deteksi">Detect</h3><p data-en="Regex rules and IndoBERT NER mark candidate personal data with bounding boxes." data-id="Aturan regex dan NER IndoBERT menandai calon data pribadi lengkap dengan kotak pembatas.">Regex rules and IndoBERT NER mark candidate personal data with bounding boxes.</p></li>
+            <li><h3 data-en="Review" data-id="Tinjau">Review</h3><p data-en="An editor accepts, rejects, or adds findings in the browser." data-id="Editor menerima, menolak, atau menambah temuan di browser.">An editor accepts, rejects, or adds findings in the browser.</p></li>
+            <li><h3 data-en="Redact" data-id="Redaksi">Redact</h3><p data-en="Removes the text from the PDF, image, DOCX, or XLSX file itself." data-id="Menghapus teks dari berkas PDF, gambar, DOCX, atau XLSX itu sendiri.">Removes the text from the PDF, image, DOCX, or XLSX file itself.</p></li>
+            <li><h3 data-en="Verify" data-id="Verifikasi">Verify</h3><p data-en="Checks that the removed text cannot be copied or found with Ctrl+F." data-id="Memeriksa bahwa teks yang dihapus tidak bisa disalin atau dicari dengan Ctrl+F.">Checks that the removed text cannot be copied or found with Ctrl+F.</p></li>
+          </ol>
+        </div>
+        <p class="note"
+           data-en="Status: unit tests pass. Load tests, security tests, and end-to-end tests with Docker, Redis, and Google OAuth come before go-live."
+           data-id="Status: unit test lulus. Uji beban, uji keamanan, dan uji end-to-end dengan Docker, Redis, dan Google OAuth dilakukan sebelum go-live.">
+          Status: unit tests pass. Load tests, security tests, and end-to-end tests with Docker, Redis, and Google OAuth come before go-live.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-en="Selected work" data-id="Proyek pilihan">Selected work</h2>
+        </div>
+        <div class="rows">
+
+          <article class="row featured">
+            <div class="row-meta">
+              <span class="row-year">2025 - 2026</span>
+              <span data-en="Work, HKI registered" data-id="Pekerjaan, terdaftar HKI">Work, HKI registered</span>
+            </div>
+            <div class="row-body">
+              <h3 data-en="Scientific Journal Monitoring System" data-id="Sistem Monitoring Jurnal Ilmiah">Scientific Journal Monitoring System</h3>
+              <p class="row-org" data-en="DRPM, Budi Luhur University" data-id="DRPM, Universitas Budi Luhur">DRPM, Budi Luhur University</p>
+              <p data-en="A web application that monitors and audits the financial flow and academic performance of faculty journals across the university. It has an interactive dashboard, role-based sign-in, and Sinta and Scopus ID integration."
+                 data-id="Aplikasi web untuk memonitor dan mengaudit aliran keuangan dan kinerja akademik jurnal fakultas di seluruh universitas. Dilengkapi dashboard interaktif, login berbasis peran, dan integrasi ID Sinta dan Scopus.">A web application that monitors and audits the financial flow and academic performance of faculty journals across the university. It has an interactive dashboard, role-based sign-in, and Sinta and Scopus ID integration.</p>
+              <div class="proj-tags"><span>Laravel</span><span>MySQL</span><span>RESTful API</span><span>Bootstrap</span><span>Tailwind</span></div>
+              <p class="proj-links"><a href="https://monitoringjurnal.budiluhur.ac.id" target="_blank" rel="noopener" data-en="Live site" data-id="Situs langsung">Live site</a></p>
+            </div>
+          </article>
+
+          <article class="row featured">
+            <div class="row-meta">
+              <span class="row-year">2026</span>
+              <span data-en="Thesis" data-id="Skripsi">Thesis</span>
+            </div>
+            <div class="row-body">
+              <h3 data-en="Extractive Summarization for LPP TVRI" data-id="Peringkasan Ekstraktif untuk LPP TVRI">Extractive Summarization for LPP TVRI</h3>
+              <p class="row-org" data-en="Final year thesis, Budi Luhur University" data-id="Skripsi, Universitas Budi Luhur">Final year thesis, Budi Luhur University</p>
+              <p data-en="A transparent NLP pipeline that summarizes Forum Reformasi Birokrasi meeting minutes. It fuses BM25, position, length, and keyword scores with LSA/SVD, then picks sentences with MMR. ROUGE evaluation sits inside the interface. ROUGE-1 F1 is 0.3665, ROUGE-2 F1 is 0.1840, and ROUGE-L F1 is 0.2261."
+                 data-id="Pipeline NLP transparan yang meringkas notulensi rapat Forum Reformasi Birokrasi. Menggabungkan skor BM25, posisi, panjang, dan kata kunci dengan LSA/SVD, lalu memilih kalimat dengan MMR. Evaluasi ROUGE ada di dalam antarmuka. ROUGE-1 F1 0,3665, ROUGE-2 F1 0,1840, dan ROUGE-L F1 0,2261.">A transparent NLP pipeline that summarizes Forum Reformasi Birokrasi meeting minutes. It fuses BM25, position, length, and keyword scores with LSA/SVD, then picks sentences with MMR. ROUGE evaluation sits inside the interface. ROUGE-1 F1 is 0.3665, ROUGE-2 F1 is 0.1840, and ROUGE-L F1 is 0.2261.</p>
+              <p data-en="I also compared it with TextRank on 7 documents. TextRank scored 0.2194 and LSA scored 0.2070 in macro ROUGE F1. A paired t-test gave p = 0.45, so the gap is not significant."
+                 data-id="Saya juga membandingkannya dengan TextRank pada 7 dokumen. Macro ROUGE F1 TextRank 0,2194 dan LSA 0,2070. Uji t berpasangan menghasilkan p = 0,45, jadi selisihnya tidak signifikan.">I also compared it with TextRank on 7 documents. TextRank scored 0.2194 and LSA scored 0.2070 in macro ROUGE F1. A paired t-test gave p = 0.45, so the gap is not significant.</p>
+              <div class="proj-tags"><span>Python</span><span>Streamlit</span><span>PostgreSQL</span><span>Sastrawi</span><span>Scikit-Learn</span></div>
+              <p class="proj-links"><a href="https://github.com/andarahabibie/mesin_peringkasan" target="_blank" rel="noopener" data-en="Source on GitHub" data-id="Kode di GitHub">Source on GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="row">
+            <div class="row-meta">
+              <span class="row-year">2024</span>
+              <span data-en="Personal" data-id="Pribadi">Personal</span>
+            </div>
+            <div class="row-body">
+              <h3>AI FOOD (Asli Indonesia)</h3>
+              <p class="row-org" data-en="E-commerce web application" data-id="Aplikasi web e-commerce">E-commerce web application</p>
+              <p data-en="An e-commerce site that promotes Indonesian food products worldwide. It has a shop catalog with sorting, discounts, and a cart, and a custom dark theme."
+                 data-id="Situs e-commerce yang mempromosikan produk kuliner Indonesia ke seluruh dunia. Punya katalog toko dengan pengurutan, diskon, dan keranjang, serta tema gelap kustom.">An e-commerce site that promotes Indonesian food products worldwide. It has a shop catalog with sorting, discounts, and a cart, and a custom dark theme.</p>
+              <div class="proj-tags"><span>WordPress</span><span>PHP</span><span>UI Design</span></div>
+              <p class="proj-links"><a href="https://aifood.liveblog365.com" target="_blank" rel="noopener" data-en="Live site" data-id="Situs langsung">Live site</a></p>
+            </div>
+          </article>
+
+          <article class="row">
+            <div class="row-meta">
+              <span class="row-year">2024</span>
+              <span data-en="NLP research" data-id="Riset NLP">NLP research</span>
+            </div>
+            <div class="row-body">
+              <h3 data-en="Indonesian Text Information Extraction with Naive Bayes" data-id="Ekstraksi Informasi Teks Indonesia dengan Naive Bayes">Indonesian Text Information Extraction with Naive Bayes</h3>
+              <p class="row-org" data-en="Individual project, Google Colab" data-id="Proyek individu, Google Colab">Individual project, Google Colab</p>
+              <p data-en="An Indonesian NLP pipeline that extracts key information from raw text with a Naive Bayes classifier. It covers tokenization, Sastrawi stemming and stopword removal, TF-IDF, and evaluation by accuracy, precision, recall, and F1."
+                 data-id="Pipeline NLP berbahasa Indonesia yang mengekstraksi informasi kunci dari teks mentah dengan classifier Naive Bayes. Mencakup tokenisasi, stemming dan penghapusan stopword dengan Sastrawi, TF-IDF, dan evaluasi akurasi, presisi, recall, dan F1.">An Indonesian NLP pipeline that extracts key information from raw text with a Naive Bayes classifier. It covers tokenization, Sastrawi stemming and stopword removal, TF-IDF, and evaluation by accuracy, precision, recall, and F1.</p>
+              <div class="proj-tags"><span>Python</span><span>Naive Bayes</span><span>Sastrawi</span><span>TF-IDF</span><span>Scikit-Learn</span></div>
+              <p class="proj-links"><a href="https://colab.research.google.com/drive/1UVVAp1uzLQ3LjupEk4mw1LQJBSTvTF1Y" target="_blank" rel="noopener">Colab</a></p>
+            </div>
+          </article>
+
+          <article class="row">
+            <div class="row-meta">
+              <span class="row-year">2024</span>
+              <span>Data science</span>
+            </div>
+            <div class="row-body">
+              <h3 data-en="Historical Stock and Revenue Analysis: Tesla and GameStop" data-id="Analisis Saham dan Pendapatan Historis: Tesla dan GameStop">Historical Stock and Revenue Analysis: Tesla and GameStop</h3>
+              <p class="row-org" data-en="IBM Data Science final assignment, in a repository of nine notebooks" data-id="Tugas akhir IBM Data Science, dalam repositori berisi sembilan notebook">IBM Data Science final assignment, in a repository of nine notebooks</p>
+              <p data-en="I pulled stock prices and quarterly revenue with a financial API and web scraping, then built dual-panel Plotly charts that compare the two. The same repository holds Indonesian hate speech tweet classification, K-Means clustering of banknote features, a Keras CNN classifier, and LSB steganography."
+                 data-id="Saya mengambil harga saham dan pendapatan kuartalan dengan API keuangan dan web scraping, lalu membuat grafik Plotly dua panel untuk membandingkannya. Repositori yang sama berisi klasifikasi tweet ujaran kebencian Indonesia, klasterisasi K-Means fitur uang kertas, classifier CNN Keras, dan steganografi LSB.">I pulled stock prices and quarterly revenue with a financial API and web scraping, then built dual-panel Plotly charts that compare the two. The same repository holds Indonesian hate speech tweet classification, K-Means clustering of banknote features, a Keras CNN classifier, and LSB steganography.</p>
+              <div class="proj-tags"><span>Python</span><span>yfinance</span><span>BeautifulSoup</span><span>Plotly</span><span>Pandas</span></div>
+              <p class="proj-links"><a href="https://github.com/andarahabibie/DataScienceToolsEcosystem" target="_blank" rel="noopener" data-en="Notebooks on GitHub" data-id="Notebook di GitHub">Notebooks on GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="row">
+            <div class="row-meta">
+              <span class="row-year">2026</span>
+              <span data-en="Competition proposal" data-id="Proposal lomba">Competition proposal</span>
+            </div>
+            <div class="row-body">
+              <h3>Go Healthy with Taiwan 2026</h3>
+              <p class="row-org" data-en="IoT competitive game system" data-id="Sistem game kompetitif IoT">IoT competitive game system</p>
+              <p data-en="A health game that uses Taiwanese IoT sensors on stationary bikes and jogging pads. Players race in real time through a live scoring engine and leaderboard, which keeps indoor cardio from getting boring."
+                 data-id="Game kesehatan yang memakai sensor IoT Taiwan pada sepeda statis dan bantalan jogging. Pemain berlomba secara real time lewat mesin skor dan papan peringkat langsung, sehingga kardio dalam ruangan tidak membosankan.">A health game that uses Taiwanese IoT sensors on stationary bikes and jogging pads. Players race in real time through a live scoring engine and leaderboard, which keeps indoor cardio from getting boring.</p>
+              <div class="proj-tags"><span>IoT</span><span>System design</span><span>REST API</span></div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience">
+    <section id="experience" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-en="Experience" data-id="Pengalaman">Experience</span>
-          <h2 data-en="Where I Have Worked" data-id="Tempat Saya Bekerja">Where I Have Worked</h2>
+          <h2 data-en="Experience" data-id="Pengalaman">Experience</h2>
         </div>
-        <div class="timeline">
+        <div class="rows">
 
-          <div class="timeline-item">
-            <div class="tl-meta">
-              <span class="tl-period">Apr 2026 – Jul 2026</span>
-              <span class="tl-badge current" data-en="Active" data-id="Aktif">Active</span>
+          <div class="row">
+            <div class="row-meta">
+              <span class="row-year" data-en="Nov 2026 - Present" data-id="Nov 2026 - Sekarang">Nov 2026 - Present</span>
+              <span class="badge" data-en="Active" data-id="Aktif">Active</span>
             </div>
-            <div class="tl-body">
-              <h3 data-en="Lead Researcher & Developer" data-id="Peneliti & Developer Utama">Lead Researcher & Developer</h3>
-              <p class="tl-org">LPP TVRI Extractive Summarization — Final Year Thesis · Budi Luhur University</p>
-              <p data-en="Designed a multi-feature NLP pipeline to automatically summarize TVRI Forum RB meeting minutes. Built a full-stack Python + Streamlit application with PostgreSQL persistence and a built-in ROUGE evaluation module. Applied BM25, LSA/SVD, TextRank, and MMR in a transparent, white-box scoring pipeline."
-                 data-id="Merancang pipeline NLP multi-fitur untuk meringkas notulen rapat Forum RB TVRI secara otomatis. Membangun aplikasi Python + Streamlit full-stack dengan persistensi PostgreSQL dan modul evaluasi ROUGE terintegrasi. Menerapkan BM25, LSA/SVD, TextRank, dan MMR dalam pipeline skoring transparan berbasis white-box.">
-                Designed a multi-feature NLP pipeline to automatically summarize TVRI Forum RB meeting minutes. Built a full-stack Python + Streamlit application with PostgreSQL persistence and a built-in ROUGE evaluation module. Applied BM25, LSA/SVD, TextRank, and MMR in a transparent, white-box scoring pipeline.
-              </p>
-              <div class="tl-tags"><span>Python</span><span>Streamlit</span><span>PostgreSQL</span><span>NLP</span><span>LSA</span><span>TextRank</span></div>
+            <div class="row-body">
+              <h3 data-en="Programmer (AI) Intern" data-id="Programmer (AI) Magang">Programmer (AI) Intern</h3>
+              <p class="row-org" data-en="Constitutional Court of the Republic of Indonesia, ICT Center" data-id="Mahkamah Konstitusi Republik Indonesia, Pusat TIK">Constitutional Court of the Republic of Indonesia, ICT Center</p>
+              <p data-en="I build AI-Redact, a service that finds personal data in legal documents and removes it from the file."
+                 data-id="Saya membangun AI-Redact, layanan yang menemukan data pribadi di dokumen hukum dan menghapusnya dari berkas.">I build AI-Redact, a service that finds personal data in legal documents and removes it from the file.</p>
+              <div class="proj-tags"><span>Python</span><span>FastAPI</span><span>Celery</span><span>Redis</span><span>Docker</span><span>IndoBERT</span></div>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="tl-meta">
-              <span class="tl-period">Jun 2025 – Jan 2026</span>
+          <div class="row">
+            <div class="row-meta">
+              <span class="row-year" data-en="May 2026 - Jul 2026" data-id="Mei 2026 - Jul 2026">May 2026 - Jul 2026</span>
             </div>
-            <div class="tl-body">
-              <h3 data-en="Web Developer" data-id="Web Developer">Web Developer</h3>
-              <p class="tl-org">Directorate of Research & Community Service (DRPM) · Budi Luhur University</p>
-              <p data-en="Built and deployed a Laravel + RESTful API journal management system for university-wide journal performance and financial reporting. Worked directly with the Kasubdit Jurnal and DRPM Director to digitize complex administrative workflows. Presented to university leadership — resulted in formal HKI registration."
-                 data-id="Membangun dan men-deploy sistem manajemen jurnal berbasis Laravel + RESTful API untuk pelaporan kinerja dan keuangan jurnal universitas. Bekerja langsung dengan Kasubdit Jurnal dan Direktur DRPM untuk mendigitalisasi alur kerja administrasi yang kompleks. Dipresentasikan ke pimpinan universitas — menghasilkan pendaftaran HKI resmi.">
-                Built and deployed a Laravel + RESTful API journal management system for university-wide journal performance and financial reporting. Worked directly with the Kasubdit Jurnal and DRPM Director to digitize complex administrative workflows. Presented to university leadership — resulted in formal HKI registration.
-              </p>
-              <div class="tl-tags"><span>Laravel</span><span>MySQL</span><span>RESTful API</span><span>Bootstrap</span><span>Tailwind</span></div>
+            <div class="row-body">
+              <h3 data-en="Student Researcher and Developer" data-id="Peneliti Mahasiswa dan Developer">Student Researcher and Developer</h3>
+              <p class="row-org" data-en="Budi Luhur University and LPP TVRI" data-id="Universitas Budi Luhur dan LPP TVRI">Budi Luhur University and LPP TVRI</p>
+              <p data-en="I designed a multi-feature extractive summarization pipeline for Indonesian national television and released it as a full-stack Python app with PostgreSQL. I evaluated it with ROUGE and added TextRank as a comparison baseline."
+                 data-id="Saya merancang pipeline peringkasan ekstraktif multi-fitur untuk televisi nasional Indonesia dan merilisnya sebagai aplikasi Python full-stack dengan PostgreSQL. Saya mengevaluasinya dengan ROUGE dan menambahkan TextRank sebagai pembanding.">I designed a multi-feature extractive summarization pipeline for Indonesian national television and released it as a full-stack Python app with PostgreSQL. I evaluated it with ROUGE and added TextRank as a comparison baseline.</p>
+              <div class="proj-tags"><span>Python</span><span>Streamlit</span><span>PostgreSQL</span><span>NLP</span><span>LSA</span><span>TextRank</span></div>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="tl-meta">
-              <span class="tl-period">Aug 2022 – Oct 2026</span>
+          <div class="row">
+            <div class="row-meta">
+              <span class="row-year" data-en="Mar 2025 - Feb 2026" data-id="Mar 2025 - Feb 2026">Mar 2025 - Feb 2026</span>
             </div>
-            <div class="tl-body">
-              <h3 data-en="Bachelor of Informatics Engineering" data-id="S1 Teknik Informatika">Bachelor of Informatics Engineering</h3>
-              <p class="tl-org" data-en="AI Specialization · Excellence Class · Budi Luhur University" data-id="Spesialisasi AI · Kelas Unggulan · Universitas Budi Luhur">AI Specialization · Excellence Class · Budi Luhur University</p>
-              <p data-en="Final year student. Completed Stanford's Algorithms Specialization and IBM's Data Science Foundations Specialization as part of continuous learning outside the classroom."
-                 data-id="Mahasiswa tingkat akhir. Menyelesaikan Algorithms Specialization dari Stanford dan Data Science Foundations dari IBM sebagai bagian dari pembelajaran berkelanjutan di luar kelas.">
-                Final year student. Completed Stanford's Algorithms Specialization and IBM's Data Science Foundations Specialization as part of continuous learning outside the classroom.
-              </p>
-              <div class="tl-tags"><span data-en="Education" data-id="Pendidikan">Education</span><span>2026</span></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="alt-bg">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-en="Projects" data-id="Proyek">Projects</span>
-          <h2 data-en="Selected Work" data-id="Proyek Pilihan">Selected Work</h2>
-        </div>
-        <div class="projects-list">
-
-          <article class="project-item featured">
-            <div class="proj-meta">
-              <span class="proj-year">2025 – 2026</span>
-              <span class="proj-type" data-en="Work · HKI Registered" data-id="Pekerjaan · Terdaftar HKI">Work · HKI Registered</span>
-            </div>
-            <div class="proj-content">
-              <h3>Scientific Journal Monitoring System</h3>
-              <p class="proj-org">DRPM · Budi Luhur University</p>
-              <p data-en="Enterprise-grade web application for monitoring and auditing the financial flow and academic performance of faculty scientific journals across the university. Features an interactive dashboard, complex role-based authentication, and Sinta & Scopus ID integration."
-                 data-id="Aplikasi web skala enterprise untuk memonitor dan mengaudit aliran keuangan serta kinerja akademik jurnal ilmiah fakultas di seluruh universitas. Dilengkapi dashboard interaktif, autentikasi berbasis peran yang kompleks, dan integrasi ID Sinta & Scopus.">
-                Enterprise-grade web application for monitoring and auditing the financial flow and academic performance of faculty scientific journals across the university. Features an interactive dashboard, complex role-based authentication, and Sinta & Scopus ID integration.
-              </p>
+            <div class="row-body">
+              <h3>Web Developer</h3>
+              <p class="row-org" data-en="Research and Community Service Directorate (DRPM), Budi Luhur University" data-id="Direktorat Riset dan Pengabdian Masyarakat (DRPM), Universitas Budi Luhur">Research and Community Service Directorate (DRPM), Budi Luhur University</p>
+              <p data-en="We built and deployed a journal management system with Laravel and a RESTful API. I worked with the journal sub-directorate head and the DRPM Director to digitize complex administrative workflows. The system now holds an HKI registration."
+                 data-id="Kami membangun dan men-deploy sistem manajemen jurnal dengan Laravel dan RESTful API. Saya bekerja dengan Kasubdit Jurnal dan Direktur DRPM untuk mendigitalisasi alur kerja administrasi yang kompleks. Sistem ini kini terdaftar HKI.">We built and deployed a journal management system with Laravel and a RESTful API. I worked with the journal sub-directorate head and the DRPM Director to digitize complex administrative workflows. The system now holds an HKI registration.</p>
               <div class="proj-tags"><span>Laravel</span><span>MySQL</span><span>RESTful API</span><span>Bootstrap</span><span>Tailwind</span></div>
-              <div class="proj-links">
-                <a href="https://monitoringjurnal.budiluhur.ac.id" target="_blank" rel="noopener" data-en="Live Site →" data-id="Lihat Live →">Live Site →</a>
-              </div>
             </div>
-          </article>
+          </div>
 
-          <article class="project-item featured">
-            <div class="proj-meta">
-              <span class="proj-year">2026</span>
-              <span class="proj-type" data-en="Thesis · Researcher & Developer" data-id="Skripsi · Riset Aktif">Thesis · Researcher & Developer</span>
+          <div class="row">
+            <div class="row-meta">
+              <span class="row-year">2022 - 2026</span>
+              <span data-en="Education" data-id="Pendidikan">Education</span>
             </div>
-            <div class="proj-content">
-              <h3>Extractive Summarization System — LPP TVRI</h3>
-              <p class="proj-org">Final Year Thesis · Budi Luhur University</p>
-              <p data-en="White-box NLP pipeline that automatically summarizes TVRI Forum RB meeting minutes. Fuses BM25, Position, Length, and Keyword Boost scores with LSA/SVD for semantic analysis, TextRank for graph-based ranking, and MMR for deduplication. ROUGE evaluation is built into the interface."
-                 data-id="Pipeline NLP white-box yang secara otomatis meringkas notulen rapat Forum RB TVRI. Menggabungkan skor BM25, Posisi, Panjang, dan Keyword Boost dengan LSA/SVD untuk analisis semantik, TextRank untuk peringkat berbasis graf, dan MMR untuk deduplikasi. Evaluasi ROUGE terintegrasi dalam antarmuka.">
-                White-box NLP pipeline that automatically summarizes TVRI Forum RB meeting minutes. Fuses BM25, Position, Length, and Keyword Boost scores with LSA/SVD for semantic analysis, TextRank for graph-based ranking, and MMR for deduplication. ROUGE evaluation is built into the interface.
-              </p>
-              <div class="proj-tags"><span>Python</span><span>Streamlit</span><span>PostgreSQL</span><span>Sastrawi</span><span>Scikit-Learn</span></div>
-              <div class="proj-links">
-                <a href="https://github.com/andarahabibie/mesin_peringkasan" target="_blank" rel="noopener">GitHub →</a>
-              </div>
+            <div class="row-body">
+              <h3 data-en="Bachelor of Computer Science" data-id="Sarjana Computer Science">Bachelor of Computer Science</h3>
+              <p class="row-org" data-en="AI Specialization, Excellence Class, Budi Luhur University. GPA 3.69 / 4.00, cum laude." data-id="Spesialisasi AI, Kelas Unggulan, Universitas Budi Luhur. IPK 3,69 / 4,00, cum laude.">AI Specialization, Excellence Class, Budi Luhur University. GPA 3.69 / 4.00, cum laude.</p>
+              <p data-en="Certificates: IBM AI Engineering and IBM Generative AI Engineering (Oct 2026), IBM SkillsBuild Build an AI Agent badge (Nov 2026), IBM and University of London Data Science Foundations, and Stanford Algorithms Specialization."
+                 data-id="Sertifikat: IBM AI Engineering dan IBM Generative AI Engineering (Okt 2026), lencana IBM SkillsBuild Build an AI Agent (Nov 2026), Data Science Foundations dari IBM dan University of London, serta Algorithms Specialization dari Stanford.">Certificates: IBM AI Engineering and IBM Generative AI Engineering (Oct 2026), IBM SkillsBuild Build an AI Agent badge (Nov 2026), IBM and University of London Data Science Foundations, and Stanford Algorithms Specialization.</p>
             </div>
-          </article>
-
-          <article class="project-item">
-            <div class="proj-meta">
-              <span class="proj-year">2024</span>
-              <span class="proj-type" data-en="Personal" data-id="Pribadi">Personal</span>
-            </div>
-            <div class="proj-content">
-              <h3>AI FOOD (Asli Indonesia)</h3>
-              <p class="proj-org" data-en="E-Commerce Web Application" data-id="Aplikasi Web E-Commerce">E-Commerce Web Application</p>
-              <p data-en="Full-stack e-commerce platform promoting Indonesian culinary products globally. Features a dynamic shop catalog with sorting, discounts, and cart functionality. Built with a custom dark-themed UI to stand apart from standard food platforms."
-                 data-id="Platform e-commerce full-stack yang mempromosikan produk kuliner Indonesia ke seluruh dunia. Dilengkapi katalog toko dinamis dengan pengurutan, diskon, dan fitur keranjang belanja. Dibangun dengan UI bertema gelap kustom untuk membedakan dari platform kuliner standar.">
-                Full-stack e-commerce platform promoting Indonesian culinary products globally. Features a dynamic shop catalog with sorting, discounts, and cart functionality. Built with a custom dark-themed UI to stand apart from standard food platforms.
-              </p>
-              <div class="proj-tags"><span>WordPress</span><span>PHP</span><span>UI Design</span></div>
-              <div class="proj-links">
-                <a href="https://aifood.liveblog365.com" target="_blank" rel="noopener" data-en="Live Site →" data-id="Lihat Live →">Live Site →</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-item">
-            <div class="proj-meta">
-              <span class="proj-year">2024</span>
-              <span class="proj-type" data-en="NLP Research" data-id="Riset NLP">NLP Research</span>
-            </div>
-            <div class="proj-content">
-              <h3 data-en="Indonesian Text Information Extraction — Naive Bayes" data-id="Ekstraksi Informasi Teks Indonesia — Naive Bayes">Indonesian Text Information Extraction — Naive Bayes</h3>
-              <p class="proj-org" data-en="Individual Project · Google Colab" data-id="Proyek Individu · Google Colab">Individual Project · Google Colab</p>
-              <p data-en="Indonesian-language NLP pipeline for extracting key information from raw text using a Naive Bayes classifier. Includes tokenization, Sastrawi-based stemming and stopword removal, TF-IDF vectorization, and full model evaluation (accuracy, precision, recall, F1)."
-                 data-id="Pipeline NLP berbahasa Indonesia untuk mengekstraksi informasi kunci dari teks mentah menggunakan classifier Naive Bayes. Mencakup tokenisasi, stemming dan penghapusan stopword berbasis Sastrawi, vektorisasi TF-IDF, dan evaluasi model lengkap (akurasi, presisi, recall, F1).">
-                Indonesian-language NLP pipeline for extracting key information from raw text using a Naive Bayes classifier. Includes tokenization, Sastrawi-based stemming and stopword removal, TF-IDF vectorization, and full model evaluation (accuracy, precision, recall, F1).
-              </p>
-              <div class="proj-tags"><span>Python</span><span>Naive Bayes</span><span>Sastrawi</span><span>TF-IDF</span><span>Scikit-Learn</span></div>
-              <div class="proj-links">
-                <a href="https://colab.research.google.com/drive/1UVVAp1uzLQ3LjupEk4mw1LQJBSTvTF1Y" target="_blank" rel="noopener">Colab →</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-item">
-            <div class="proj-meta">
-              <span class="proj-year">2024</span>
-              <span class="proj-type" data-en="Data Science" data-id="Data Science">Data Science</span>
-            </div>
-            <div class="proj-content">
-              <h3 data-en="Historical Stock & Revenue Analysis — Tesla & GameStop" data-id="Analisis Saham & Pendapatan Historis — Tesla & GameStop">Historical Stock & Revenue Analysis — Tesla & GameStop</h3>
-              <p class="proj-org" data-en="IBM Data Science Final Assignment · GitHub" data-id="Tugas Akhir IBM Data Science · GitHub">IBM Data Science Final Assignment · GitHub</p>
-              <p data-en="Extracted, cleaned, and visualized historical stock price and quarterly revenue data for Tesla and GameStop using real financial APIs and web scraping. Built interactive dual-panel Plotly dashboards for side-by-side stock vs. revenue comparison."
-                 data-id="Mengekstraksi, membersihkan, dan memvisualisasikan data harga saham historis dan pendapatan kuartalan untuk Tesla dan GameStop menggunakan API keuangan nyata dan web scraping. Membangun dashboard Plotly interaktif dua panel untuk perbandingan saham vs. pendapatan secara berdampingan.">
-                Extracted, cleaned, and visualized historical stock price and quarterly revenue data for Tesla and GameStop using real financial APIs and web scraping. Built interactive dual-panel Plotly dashboards for side-by-side stock vs. revenue comparison.
-              </p>
-              <div class="proj-tags"><span>Python</span><span>yfinance</span><span>BeautifulSoup</span><span>Plotly</span><span>Pandas</span></div>
-              <div class="proj-links">
-                <a href="https://github.com/andarahabibie/DataScienceToolsEcosystem" target="_blank" rel="noopener">GitHub →</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-item">
-            <div class="proj-meta">
-              <span class="proj-year">2026</span>
-              <span class="proj-type" data-en="Proposal" data-id="Proposal">Proposal</span>
-            </div>
-            <div class="proj-content">
-              <h3>Go Healthy with Taiwan 2026</h3>
-              <p class="proj-org" data-en="IoT Competitive Game System" data-id="Sistem Game Kompetitif IoT">IoT Competitive Game System</p>
-              <p data-en="Competitive health game system using Taiwanese IoT sensor hardware — stationary bikes and jogging pads. Players race in real time via movement data fed into a live scoring engine and leaderboard. Designed to make sustained physical activity engaging through competition."
-                 data-id="Sistem game kesehatan kompetitif menggunakan perangkat keras sensor IoT Taiwan — sepeda statis dan bantalan jogging. Pemain bersaing secara real-time melalui data gerakan yang masuk ke mesin skoring dan papan peringkat langsung. Dirancang agar aktivitas fisik berkelanjutan menjadi menarik melalui kompetisi.">
-                Competitive health game system using Taiwanese IoT sensor hardware — stationary bikes and jogging pads. Players race in real time via movement data fed into a live scoring engine and leaderboard. Designed to make sustained physical activity engaging through competition.
-              </p>
-              <div class="proj-tags"><span>IoT</span><span>System Design</span><span>Game Mechanics</span></div>
-            </div>
-          </article>
+          </div>
 
         </div>
       </div>
     </section>
 
-    <!-- BLOG -->
-    <section id="blog">
+    <!-- SKILLS -->
+    <section id="skills" class="section alt-bg">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-en="Blog" data-id="Tulisan">Blog</span>
-          <h2 data-en="Writing & Notes" data-id="Tulisan & Catatan">Writing & Notes</h2>
-          <p class="section-desc"
-             data-en="Technical notes, research reflections, and things I learned building real systems."
-             data-id="Catatan teknis, refleksi riset, dan hal yang saya pelajari saat membangun sistem nyata.">
-            Technical notes, research reflections, and things I learned building real systems.
-          </p>
+          <h2 data-en="Skills" data-id="Keahlian">Skills</h2>
         </div>
-        <div class="blog-grid">
-          <article class="blog-card">
-            <span class="blog-date">Aug 2026</span>
-            <h3 data-en="Why MMR Matters: Deduplication in Extractive Summarization" data-id="Mengapa MMR Penting: Deduplikasi dalam Peringkasan Ekstraktif">Why MMR Matters: Deduplication in Extractive Summarization</h3>
-            <p data-en="Without deduplication, high-scoring sentences dominate and repeat. Here is why Maximal Marginal Relevance is a necessary final step in any extractive pipeline."
-               data-id="Tanpa deduplikasi, kalimat skor tinggi mendominasi dan berulang. Inilah mengapa Maximal Marginal Relevance adalah langkah akhir yang diperlukan dalam pipeline ekstraktif manapun.">
-              Without deduplication, high-scoring sentences dominate and repeat. Here is why Maximal Marginal Relevance is a necessary final step in any extractive pipeline.
-            </p>
-            <span class="blog-tag">NLP</span>
-          </article>
-          <article class="blog-card">
-            <span class="blog-date">Jul 2026</span>
-            <h3 data-en="LSA vs TextRank: What ROUGE Scores Actually Tell You" data-id="LSA vs TextRank: Apa yang Sebenarnya Diceritakan Skor ROUGE">LSA vs TextRank: What ROUGE Scores Actually Tell You</h3>
-            <p data-en="I ran both methods on the same TVRI dataset. The numbers were close. The differences revealed something important about what each method actually captures."
-               data-id="Saya menjalankan kedua metode pada dataset TVRI yang sama. Angkanya berdekatan. Perbedaannya mengungkapkan sesuatu yang penting tentang apa yang sebenarnya ditangkap setiap metode.">
-              I ran both methods on the same TVRI dataset. The numbers were close. The differences revealed something important about what each method actually captures.
-            </p>
-            <span class="blog-tag">Research</span>
-          </article>
-          <article class="blog-card">
-            <span class="blog-date">Jan 2026</span>
-            <h3 data-en="Shipping a Laravel System to Non-Developer Stakeholders" data-id="Meluncurkan Sistem Laravel ke Stakeholder Non-Developer">Shipping a Laravel System to Non-Developer Stakeholders</h3>
-            <p data-en="Mapping real administrative workflows at DRPM taught me more about software requirements than any course. Lessons from the journal monitoring system project."
-               data-id="Memetakan alur kerja administrasi nyata di DRPM mengajarkan saya lebih banyak tentang persyaratan perangkat lunak daripada kursus manapun. Pelajaran dari proyek sistem monitoring jurnal.">
-              Mapping real administrative workflows at DRPM taught me more about software requirements than any course. Lessons from the journal monitoring system project.
-            </p>
-            <span class="blog-tag">Web Dev</span>
-          </article>
-          <article class="blog-card">
-            <span class="blog-date">Oct 2024</span>
-            <h3 data-en="Naive Bayes for Indonesian Text: Why Preprocessing Is Everything" data-id="Naive Bayes untuk Teks Indonesia: Mengapa Preprocessing Adalah Segalanya">Naive Bayes for Indonesian Text: Why Preprocessing Is Everything</h3>
-            <p data-en="Naive Bayes classification accuracy improved significantly once I switched to Sastrawi for stemming. A look at what language-specific preprocessing changes — and what it doesn't."
-               data-id="Akurasi klasifikasi Naive Bayes meningkat signifikan setelah beralih ke Sastrawi untuk stemming. Melihat apa yang berubah dengan preprocessing spesifik bahasa — dan apa yang tidak.">
-              Naive Bayes classification accuracy improved significantly once I switched to Sastrawi for stemming. A look at what language-specific preprocessing changes — and what it doesn't.
-            </p>
-            <span class="blog-tag">NLP</span>
-          </article>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>AI &amp; NLP</h3>
+            <ul>
+              <li>IndoBERT, OCR</li>
+              <li>TF-IDF / BM25</li>
+              <li>LSA / SVD, TextRank, MMR</li>
+              <li>Naive Bayes, K-Means</li>
+              <li data-en="ROUGE evaluation" data-id="Evaluasi ROUGE">ROUGE evaluation</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 data-en="Web and backend" data-id="Web dan backend">Web and backend</h3>
+            <ul>
+              <li>FastAPI, Flask, Laravel</li>
+              <li>CodeIgniter, WordPress</li>
+              <li>REST API, Celery, Redis</li>
+              <li>Streamlit, Docker</li>
+              <li>HTML / CSS, Bootstrap, Tailwind</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data</h3>
+            <ul>
+              <li>Python, Pandas, scikit-learn</li>
+              <li>PostgreSQL, MySQL</li>
+              <li>Plotly, yfinance, BeautifulSoup</li>
+              <li>Git, Google Colab</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 data-en="Languages" data-id="Bahasa">Languages</h3>
+            <ul>
+              <li data-en="Indonesian, native" data-id="Indonesia, penutur asli">Indonesian, native</li>
+              <li data-en="English, fluent" data-id="Inggris, fasih">English, fluent</li>
+              <li data-en="Arabic, intermediate" data-id="Arab, menengah">Arabic, intermediate</li>
+            </ul>
+          </div>
         </div>
-        <p class="blog-note" data-en="More posts coming. This section will be updated as the thesis wraps up." data-id="Lebih banyak tulisan akan datang. Bagian ini akan diperbarui seiring penyelesaian skripsi.">More posts coming. This section will be updated as the thesis wraps up.</p>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="alt-bg">
-      <div class="container contact-inner">
-        <div class="section-header center">
-          <span class="section-tag" data-en="Contact" data-id="Kontak">Contact</span>
-          <h2 data-en="Let's Work Together" data-id="Mari Berkolaborasi">Let's Work Together</h2>
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-en="Let's work together" data-id="Mari berkolaborasi">Let's work together</h2>
           <p class="section-desc"
-             data-en="Open to research collaborations, freelance projects, and full-time opportunities."
-             data-id="Terbuka untuk kolaborasi riset, proyek freelance, dan kesempatan kerja penuh waktu.">
-            Open to research collaborations, freelance projects, and full-time opportunities.
+             data-en="Open to research collaboration, freelance projects, and full-time roles."
+             data-id="Terbuka untuk kolaborasi riset, proyek freelance, dan pekerjaan penuh waktu.">
+            Open to research collaboration, freelance projects, and full-time roles.
           </p>
         </div>
-        <div class="contact-links">
-          <a href="mailto:aabahmadhabibie@gmail.com" class="contact-item">
-            <span class="contact-icon">✉</span>
-            <div>
-              <strong>Email</strong>
-              <span>aabahmadhabibie@gmail.com</span>
-            </div>
-          </a>
-          <a href="https://github.com/andarahabibie" target="_blank" rel="noopener" class="contact-item">
-            <span class="contact-icon">⌥</span>
-            <div>
-              <strong>GitHub</strong>
-              <span>github.com/andarahabibie</span>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/andara-ahmad-habibie/" target="_blank" rel="noopener" class="contact-item">
-            <span class="contact-icon">in</span>
-            <div>
-              <strong>LinkedIn</strong>
-              <span>andara-ahmad-habibie</span>
-            </div>
-          </a>
-          <a href="tel:+6289653395941" class="contact-item">
-            <span class="contact-icon">☎</span>
-            <div>
-              <strong data-en="Phone / WhatsApp" data-id="Telepon / WhatsApp">Phone / WhatsApp</strong>
-              <span>+62 896-5339-5941</span>
-            </div>
-          </a>
+        <div class="contact-main">
+          <a id="mail" class="contact-mail" href="mailto:aabahmadhabibie@gmail.com">aabahmadhabibie@gmail.com</a>
+          <button id="copy-mail" type="button" class="btn-ghost" data-en="Copy email" data-id="Salin email">Copy email</button>
         </div>
+        <ul class="contact-links">
+          <li><a href="https://github.com/andarahabibie" target="_blank" rel="noopener"><strong>GitHub</strong><span>github.com/andarahabibie</span></a></li>
+          <li><a href="https://www.linkedin.com/in/andara-ahmad-habibie/" target="_blank" rel="noopener"><strong>LinkedIn</strong><span>andara-ahmad-habibie</span></a></li>
+          <li><a href="tel:+6289653395941"><strong data-en="Phone / WhatsApp" data-id="Telepon / WhatsApp">Phone / WhatsApp</strong><span>+62 896-5339-5941</span></a></li>
+        </ul>
       </div>
     </section>
 
@@ -447,7 +376,7 @@
   <footer>
     <div class="container footer-inner">
       <span>© 2026 Andara Ahmad Habibie</span>
-      <span data-en="Built for GitHub Pages" data-id="Dibuat untuk GitHub Pages">Built for GitHub Pages</span>
+      <a href="#hero" data-en="Back to top" data-id="Kembali ke atas">Back to top</a>
     </div>
   </footer>
 
